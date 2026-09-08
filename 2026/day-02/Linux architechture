@@ -1,0 +1,10 @@
+The core components of Linux (kernel, user space, init/systemd)
+
+core components of linux  are  hardware- kernal - shell - applications
+
+hardware includes cpu ram keyboard etc
+kernel is the core component of linux which manages and talk to hardware and operations and system processes 
+
+How processes are created and managed
+What systemd does and why it matters
+
