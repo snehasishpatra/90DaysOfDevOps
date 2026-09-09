@@ -6,9 +6,23 @@ hardware includes cpu ram keyboard etc
 kernel is the core component of linux which manages and talk to hardware and operations and system processes 
 shell: it is a command line interface thet interprates codes line by line and  executes user commands
 sys libraries it is a set of functions that help application interact with linux kernal 
-sys utilities :these are essential command line commonds helps to troubleshoot, manage resource and monitoring
+sys utilities :these are essential command line commands that helps to troubleshoot, manage resource and monitoring
 
 
 How processes are created and managed
-What systemd does and why it matters
+types of process 
+>created:the process id being created
+>ready: its already created and ready to run
+>running: its runnung 
+>waiting:its waiting for its chance to run 
+stopped:process is paused by user and it is stopped
+>terminated process is terminated all its resources has been removed/cleaned up
+>zombie: its child process is executed but its parrent process dosent has chance to read its exit
+>orphan:its parrent process is terminated and child process is still running 
 
+
+What systemd does and why it matters
+systemd is the core software that boots linux system it runs as pid 1 and it start stops the service
+It runs from the starting of the os it manages services such as start stops daemons (ie background task like web server)
+it can run multiple processes at a time hence it is fast.
+monitors processes handles log from entire system
